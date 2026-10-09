@@ -52,19 +52,15 @@ The configuration is intentionally small and easy to change. Plugin specs are gr
 
 ## 🚀 Installation
 
-### 1. Install Neovim
+### 1. Install Neovim (0.12.5)
 
-**Ubuntu**
+**Linux**
 ```bash
-sudo apt update
-sudo apt install neovim -y
+curl -LO https://github.com/neovim/neovim/releases/download/v0.12.5/nvim-linux-x86_64.tar.gz
+sudo rm -rf /opt/nvim-linux-x86_64
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+echo 'export PATH="$PATH:/opt/nvim-linux-x86_64/bin"' >> ~/.bashrc
 ```
-
-**Arch Linux**
-```bash
-sudo pacman -S neovim -y
-```
-
 ### 2. Install a Nerd Font
 
 Download one of the following and set it as your terminal font:
@@ -73,7 +69,7 @@ Download one of the following and set it as your terminal font:
 - [FiraCode Nerd Font](https://www.nerdfonts.com/font-downloads)
 - [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
 
-### 3. Back up your existing config *(if any)*
+### 3. Back up your existing config
 
 ```bash
 mv ~/.config/nvim ~/.config/nvim.bak 2>/dev/null
@@ -173,3 +169,6 @@ nvim
 ---
 #Update 
 update readme 
+#update repo 
+#update repo 
+#update repo 
